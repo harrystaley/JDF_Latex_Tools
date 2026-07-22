@@ -1,86 +1,64 @@
+```markdown
 # JDF_Latex_Tools
 
-## Overview
+JDF_Latex_Tools provides a set of tools for generating LaTeX tables and images in the JDF format, specifically designed for students and educators involved in the Georgia Tech OMSCS program. This repository aims to streamline the creation of high-quality LaTeX documents, making it easier to produce professional-grade academic content.
 
-JDF_Latex_Tools is a specialized toolkit designed to facilitate the creation of LaTeX tables and images adhering to the JDF (Job Description Format) commonly used within the Georgia Tech OMSCS (Online Master of Science in Computer Science) program. This toolkit is particularly useful for students and educators who need to produce high-quality academic documents and reports with consistent formatting.
+## Features
 
-### Project Structure
+- **Automated LaTeX Table Generation**: Easily create complex tables with minimal input.
+- **JDF Format Support**: Tailored tools to support the specific needs of the JDF format.
+- **Image Conversion Tools**: Convert images to LaTeX-compatible formats.
+- **Customization Options**: Flexible settings to adjust the output to your needs.
+- **Cross-Platform Support**: Works seamlessly on Windows, macOS, and Linux.
 
-The project is organized as follows:
+## Installation
 
-- **/src**: Contains the source code for all LaTeX tools.
-- **/examples**: Sample LaTeX files demonstrating the use of tools to create tables and images.
-- **/docs**: Documentation and guidelines for using the tools effectively.
-- **/tests**: Test scripts to ensure the tools work as expected.
+To get started with JDF_Latex_Tools, follow these steps:
 
-## Setup and Installation
-
-### Prerequisites
-
-Before installing JDF_Latex_Tools, ensure you have LaTeX installed on your system. For LaTeX installation, please refer to [LaTeX Project](https://www.latex-project.org/get/).
-
-### Installation Steps
-
-1. **Clone the Repository:**
+1. **Clone the Repository**:
    ```bash
    git clone https://github.com/yourusername/JDF_Latex_Tools.git
+   ```
+
+2. **Navigate to the Directory**:
+   ```bash
    cd JDF_Latex_Tools
    ```
 
-2. **Install Dependencies:**
-   Ensure that your LaTeX distribution is up-to-date with all packages required by the tools, which might include packages like `pgfplots`, `tikz`, etc.
-
-3. **Compile LaTeX Files:**
-   You can compile the LaTeX files using a command like:
+3. **Install Dependencies**:
+   Ensure you have LaTeX installed on your system. For additional dependencies, you can use:
    ```bash
-   pdflatex yourfile.tex
+   ./install_dependencies.sh
    ```
 
-## Usage Examples
+## Usage
 
-To use the tools in JDF_Latex_Tools for creating a LaTeX table, you can follow this simple example:
+Here's a basic example of how to use JDF_Latex_Tools to generate a LaTeX table:
 
-1. **Create a LaTeX file (e.g., `example.tex`):**
-   ```latex
-   \documentclass{article}
-   \usepackage{yourtool} % make sure to include the correct package
-
-   \begin{document}
-
-   \begin{yourtable}
-     % Add your table content here
-   \end{yourtable}
-
-   \end{document}
-   ```
-
-2. **Compile the file:**
+1. **Generate a Table**:
    ```bash
-   pdflatex example.tex
+   ./generate_table.sh input.csv output.tex
    ```
 
-This will generate a PDF with your table formatted according to the JDF standards.
+2. **Convert an Image**:
+   ```bash
+   ./convert_image.sh image.png output.tex
+   ```
 
-## Contributing
+Refer to the `examples` directory for more detailed usage scenarios.
 
-Contributions to JDF_Latex_Tools are welcome! If you have improvements or bug fixes, please follow these steps:
+## Contribution Guidelines
 
-1. **Fork the Repository:**
-   Start by forking the JDF_Latex_Tools repository to your GitHub account.
+We welcome contributions from the community! To contribute:
 
-2. **Create a Feature Branch:**
-   Create a new branch in your forked repository for your feature or fix.
+1. Fork the repository.
+2. Create a new branch for your feature or bugfix.
+3. Make your changes and commit them with clear messages.
+4. Submit a pull request with a detailed description of your changes.
 
-3. **Commit Your Changes:**
-   Make your changes in your branch and commit them with clear, concise commit messages.
-
-4. **Submit a Pull Request:**
-   Open a pull request from your feature branch to the main JDF_Latex_Tools repository. Please provide a clear description of the problem and solution, including any relevant issue numbers.
+Please ensure your code adheres to our coding standards and includes appropriate tests.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
-
----
-
-For more information on how to use LaTeX and contributions to this project, please refer to the `/docs` directory. Happy TeXing!
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+```
