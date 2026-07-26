@@ -1,64 +1,64 @@
 ```markdown
 # JDF_Latex_Tools
 
-JDF_Latex_Tools provides a set of tools for generating LaTeX tables and images in the JDF format, specifically designed for students and educators involved in the Georgia Tech OMSCS program. This repository aims to streamline the creation of high-quality LaTeX documents, making it easier to produce professional-grade academic content.
+Welcome to **JDF_Latex_Tools**, a versatile set of tools designed to simplify the creation of LaTeX tables and images in JDF format specifically for the OMSCS program. This repository offers automation, customization, and seamless cross-platform support to enhance your workflow.
 
 ## Features
 
-- **Automated LaTeX Table Generation**: Easily create complex tables with minimal input.
-- **JDF Format Support**: Tailored tools to support the specific needs of the JDF format.
-- **Image Conversion Tools**: Convert images to LaTeX-compatible formats.
-- **Customization Options**: Flexible settings to adjust the output to your needs.
-- **Cross-Platform Support**: Works seamlessly on Windows, macOS, and Linux.
+- **Automated LaTeX Table Generation**: Quickly create complex tables with minimal effort.
+- **Customizable Templates**: Tailor table and image templates to fit specific project needs.
+- **Cross-Platform Compatibility**: Works on various operating systems, ensuring flexibility.
+- **Integration with Version Control**: Utilize Git for efficient version tracking and collaboration.
+- **User-Friendly Interface**: Simplified command-line tools for ease of use.
 
 ## Installation
 
-To get started with JDF_Latex_Tools, follow these steps:
+To get started with JDF_Latex_Tools, clone the repository and set up the environment:
 
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/yourusername/JDF_Latex_Tools.git
-   ```
+```bash
+git clone https://github.com/yourusername/JDF_Latex_Tools.git
+cd JDF_Latex_Tools
+```
 
-2. **Navigate to the Directory**:
+Ensure you have LaTeX installed on your system. You may need additional dependencies based on your operating system.
+
+## Usage
+
+Here's a simple example of how to generate a LaTeX table:
+
+1. Navigate to the project directory:
    ```bash
    cd JDF_Latex_Tools
    ```
 
-3. **Install Dependencies**:
-   Ensure you have LaTeX installed on your system. For additional dependencies, you can use:
+2. Use the provided script to generate a table:
    ```bash
-   ./install_dependencies.sh
+   ./generate_table.sh input_data.csv output_table.tex
    ```
 
-## Usage
-
-Here's a basic example of how to use JDF_Latex_Tools to generate a LaTeX table:
-
-1. **Generate a Table**:
+3. Compile the LaTeX file using your preferred LaTeX editor or command:
    ```bash
-   ./generate_table.sh input.csv output.tex
+   pdflatex output_table.tex
    ```
 
-2. **Convert an Image**:
-   ```bash
-   ./convert_image.sh image.png output.tex
-   ```
-
-Refer to the `examples` directory for more detailed usage scenarios.
+For more detailed usage instructions, refer to the `docs/USAGE.md` file.
 
 ## Contribution Guidelines
 
-We welcome contributions from the community! To contribute:
+We welcome contributions! If you're interested in improving JDF_Latex_Tools, please follow these steps:
 
 1. Fork the repository.
 2. Create a new branch for your feature or bugfix.
-3. Make your changes and commit them with clear messages.
+3. Commit your changes with clear and concise messages.
 4. Submit a pull request with a detailed description of your changes.
 
-Please ensure your code adheres to our coding standards and includes appropriate tests.
+Please ensure your code adheres to the existing style and includes appropriate tests.
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+---
+
+Thank you for using JDF_Latex_Tools! We hope it enhances your OMSCS experience.
 ```
