@@ -1,56 +1,63 @@
 ```markdown
 # JDF_Latex_Tools
 
-Automate the creation of LaTeX tables and images in JDF format, specifically designed for OMSCS projects. This tool provides customizable templates and seamless Git integration, ensuring efficient version control and collaboration. With cross-platform support, JDF_Latex_Tools streamlines the process of managing LaTeX documents across different operating systems.
+Automate LaTeX table and image creation in JDF format for OMSCS projects with customizable templates and Git integration. This tool offers cross-platform support and is designed to streamline your workflow, ensuring efficiency and consistency across your documents.
 
 ## Features
 
-- **Automated LaTeX Table/Image Creation**: Simplifies the process of generating complex tables and images in JDF format.
-- **Customizable Templates**: Offers a variety of templates to suit different project needs.
-- **Git Integration**: Facilitates version control and collaboration through Git.
-- **Cross-Platform Support**: Compatible with Windows, macOS, and Linux.
-- **Command-Line Interface**: Provides a user-friendly CLI for quick and efficient operation.
+- **Automated LaTeX Generation**: Quickly generate tables and images in JDF format.
+- **Customizable Templates**: Tailor templates to fit your specific project needs.
+- **Git Integration**: Seamlessly integrate with Git for version control.
+- **Cross-Platform Support**: Run on Windows, macOS, and Linux.
+- **Command-Line Interface**: Simple and intuitive CLI for easy operation.
+- **Support for Multiple Languages**: Built with C, Bash, and R for robust performance.
 
 ## Installation
 
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/yourusername/JDF_Latex_Tools.git
-   ```
-2. **Navigate to the Project Directory**
-   ```bash
-   cd JDF_Latex_Tools
-   ```
-3. **Install Dependencies**
+To get started with JDF_Latex_Tools, follow these steps:
+
+1. **Clone the Repository**:
+    ```bash
+    git clone https://github.com/yourusername/JDF_Latex_Tools.git
+    cd JDF_Latex_Tools
+    ```
+
+2. **Install Dependencies**:
    - Ensure you have LaTeX installed on your system.
-   - Install any required packages via your package manager.
+   - Install additional dependencies as needed for your OS.
+
+3. **Build the Project** (if applicable):
+    ```bash
+    make build
+    ```
 
 ## Usage
 
-1. **Generate a Table**
-   ```bash
-   ./generate_table.sh input.csv output.tex
-   ```
-   Replace `input.csv` with your data file and `output.tex` with your desired output file name.
+Here's a quick example to get you started:
 
-2. **Generate an Image**
-   ```bash
-   ./generate_image.sh input.png output.tex
-   ```
-   Replace `input.png` with your source image file and `output.tex` with your desired output file name.
+```bash
+# Generate a table
+./jdf_tool generate-table input.csv output.tex
 
-## Contribution Guidelines
+# Generate an image
+./jdf_tool generate-image input.png output.tex
+```
 
-We welcome contributions from the community. To contribute:
+For more detailed usage instructions, refer to the [documentation](docs/USAGE.md).
+
+## Contribution
+
+We welcome contributions! Please follow these steps:
 
 1. Fork the repository.
-2. Create a new branch for your feature or bugfix.
-3. Commit your changes and push to your fork.
-4. Open a pull request with a detailed description of your changes.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Commit your changes (`git commit -m 'Add new feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Open a Pull Request.
 
-Please ensure your code adheres to the project's coding standards and includes appropriate tests.
+Please ensure your code adheres to our coding standards and includes appropriate tests.
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
 ```
