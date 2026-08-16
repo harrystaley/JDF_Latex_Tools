@@ -1,63 +1,76 @@
 ```markdown
 # JDF_Latex_Tools
 
-Automate LaTeX table and image creation in JDF format for OMSCS projects with customizable templates and Git integration. This tool offers cross-platform support and is designed to streamline your workflow, ensuring efficiency and consistency across your documents.
+Automate LaTeX table and image creation in JDF format for OMSCS projects with customizable templates and seamless Git integration. This tool provides cross-platform support, making it easy for students and professionals to streamline documentation tasks efficiently.
 
 ## Features
 
-- **Automated LaTeX Generation**: Quickly generate tables and images in JDF format.
-- **Customizable Templates**: Tailor templates to fit your specific project needs.
-- **Git Integration**: Seamlessly integrate with Git for version control.
-- **Cross-Platform Support**: Run on Windows, macOS, and Linux.
-- **Command-Line Interface**: Simple and intuitive CLI for easy operation.
-- **Support for Multiple Languages**: Built with C, Bash, and R for robust performance.
+- **Automated LaTeX Generation**: Quickly create complex tables and images in JDF format.
+- **Customizable Templates**: Use and modify pre-defined templates to suit your project's needs.
+- **Git Integration**: Seamlessly manage changes and version control with integrated Git commands.
+- **Cross-Platform Support**: Compatible with Windows, macOS, and Linux.
+- **User-Friendly CLI**: Intuitive command-line interface for easy operation.
+- **Comprehensive Documentation**: In-depth guides and examples to help you get started quickly.
 
 ## Installation
 
-To get started with JDF_Latex_Tools, follow these steps:
+To install JDF_Latex_Tools, follow these steps:
 
-1. **Clone the Repository**:
-    ```bash
-    git clone https://github.com/yourusername/JDF_Latex_Tools.git
-    cd JDF_Latex_Tools
-    ```
+1. Clone the repository:
 
-2. **Install Dependencies**:
-   - Ensure you have LaTeX installed on your system.
-   - Install additional dependencies as needed for your OS.
+   ```bash
+   git clone https://github.com/yourusername/JDF_Latex_Tools.git
+   ```
 
-3. **Build the Project** (if applicable):
-    ```bash
-    make build
-    ```
+2. Navigate into the project directory:
+
+   ```bash
+   cd JDF_Latex_Tools
+   ```
+
+3. Run the setup script:
+
+   ```bash
+   ./setup.sh
+   ```
+
+   **Note**: Ensure you have the necessary permissions to execute scripts and that your system meets the prerequisites (e.g., Git, LaTeX distribution).
 
 ## Usage
 
-Here's a quick example to get you started:
+Here are some basic examples to get you started:
 
-```bash
-# Generate a table
-./jdf_tool generate-table input.csv output.tex
+- **Generate a Table**:
 
-# Generate an image
-./jdf_tool generate-image input.png output.tex
-```
+  ```bash
+  ./jdf_tool.sh generate table --template default --output table.tex
+  ```
+
+- **Create an Image**:
+
+  ```bash
+  ./jdf_tool.sh generate image --template graph --output image.tex
+  ```
+
+- **Commit Changes to Git**:
+
+  ```bash
+  ./jdf_tool.sh git commit -m "Updated documentation with new tables and images"
+  ```
 
 For more detailed usage instructions, refer to the [documentation](docs/USAGE.md).
 
-## Contribution
+## Contribution Guidelines
 
-We welcome contributions! Please follow these steps:
+We welcome contributions from the community! To contribute:
 
 1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-branch`).
-3. Commit your changes (`git commit -m 'Add new feature'`).
-4. Push to the branch (`git push origin feature-branch`).
-5. Open a Pull Request.
+2. Create a new branch for your feature or bugfix.
+3. Submit a pull request with a clear description of your changes.
 
-Please ensure your code adheres to our coding standards and includes appropriate tests.
+Please ensure that your contributions align with the project's coding standards and include appropriate tests.
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 ```
